@@ -30,12 +30,13 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  color: #131921;
 }
 
 .form-control:focus {
@@ -89,7 +90,7 @@ a {
 
 .header-upper .header-upper-links img {
   width: 35px;
-  height: 35px
+  height: 35px;
 }
 
 .header-bottom .menu-links a,
@@ -125,14 +126,12 @@ a {
 
 /* Header Part End Here */
 
-
 /* Footer Part */
 footer {
   background-color: var(--color-232f3e);
 }
 
 /* Footer Part Ends Here */
-
 
 /* Home Page */
 .main-banner-content {
@@ -245,8 +244,6 @@ footer {
 /* Categories Section Ends*/
 /* Home Page Ends */
 
-
-
 /* Blog Card */
 
 .blog-card {
@@ -285,9 +282,24 @@ footer {
   color: var(--color-777777);
 }
 
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+
+.single-blog-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+
+.single-blog-card p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
 /* Blog Card Ends Here */
-
-
 
 /* Product Card */
 
@@ -296,6 +308,7 @@ footer {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card:hover .action-bar {
@@ -315,6 +328,12 @@ footer {
 .product-card .product-details p.price {
   font-size: 16px;
   color: var(--color-1c1c1b);
+}
+
+.product-card p.description {
+  font-size: 13px;
+  margin-right: 50px;
+  color: var(--color-777777);
 }
 
 .action-bar {
@@ -348,5 +367,304 @@ footer {
   display: block;
 }
 
-
 /* Product Card Ends Here */
+
+/* Special Product */
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Special ProductEnds Hre */
+
+/* Famous Card */
+.famous-card .famous-content {
+  top: 10%;
+  left: 5%;
+}
+
+.famous-card img {
+  border-radius: 10px;
+}
+
+.famous-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 7px;
+}
+
+.famous-content h6 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  color: white;
+}
+
+.famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: white;
+}
+
+/* Famous Card Ends Here */
+
+/* Our Store */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 15px 25px;
+}
+
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+
+.filter-card .form-check-input:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:checked {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin: 20px 0;
+}
+
+.colors {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.random-product h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.random-product:first-child {
+  border-bottom: 1px solid var(--color-ededed);
+}
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.grid img {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gr-12 {
+  width: 100%;
+}
+
+.gr-6 {
+  width: 49%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
+}
+
+.gr-12 .product-card {
+  display: flex;
+  gap: 20px;
+}
+
+.gr-6 .product-image {
+  width: 100%;
+}
+
+.gr-6 .product-image img {
+  margin: auto;
+  display: block;
+}
+
+.gr-12 .product-card .product-image {
+  width: 270px;
+}
+
+.gr-12 .product-card .product-image {
+  height: auto;
+}
+
+.gr-12 .action-bar {
+  top: 17%;
+}
+
+/* Our Store Ends Here */
+
+/* Contact Page */
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+
+.contact-inner-wrapper>div {
+  width: 48%;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+
+.contact-inner-wrapper form .form-control {
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.contact-inner-wrapper form textarea {
+  resize: none;
+}
+
+.contact-inner-wrapper ul {
+  list-style-type: none;
+}
+
+.contact-inner-wrapper ul li,
+address,
+a,
+p {
+  color: var(--color-777777);
+}
+
+/* Contact Page Ends Here */
+
+/* Compare Product Page */
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross,
+.wishlist-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.compare-product-details h5.title,
+.wishlist-card h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1c1b);
+}
+
+.compare-product-details h6.price,
+.wishlist-card h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: 400;
+}
+
+.compare-product-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Compare Product Page Ends Here */
+
+
+/* Auth Card */
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.auth-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+
+.auth-card p {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+.auth-card .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card .signup {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+
+
+/* Auth Card Ends Here */
