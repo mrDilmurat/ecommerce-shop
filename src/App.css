@@ -668,3 +668,10 @@ p {
 
 
 /* Auth Card Ends Here */
+
+/* Policy Pages start */
+.policy{
+  background-color: white;
+  padding: 30px;
+}
+/* Policy Pages End */
