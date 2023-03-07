@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactStars from "react-rating-stars-component";
+import ReactStars from 'react-rating-stars-component';
 import { Link, useLocation } from 'react-router-dom';
 import prodcompare from '../images/prodcompare.svg'
 import wish from '../images/wish.svg'
@@ -15,8 +15,11 @@ const ProductCard = (props) => {
 
     return (
         <>
+
             <div className={`${location.pathname === "/product" ? `gr-${grid}` : "col-3"}`}>
                 <Link to=':id' className='product-card position-relative'>
+
+
                     <div className='wishlist-icon position-absolute'>
                         <button className='border-0 bg-transparent'>
                             <img src={wish} alt='wishlist' />

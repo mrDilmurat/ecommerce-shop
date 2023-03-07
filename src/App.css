@@ -853,4 +853,14 @@ p {
   color: var(--color-777777);
 }
 
+
 /* Shipping Page Ends Here */
+
+/* Auth Card Ends Here */
+
+/* Policy Pages start */
+.policy{
+  background-color: white;
+  padding: 30px;
+}
+/* Policy Pages End */
