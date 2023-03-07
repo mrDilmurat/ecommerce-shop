@@ -15,10 +15,13 @@ import Signup from './pages/Signup';
 import ResetPassword from './pages/ResetPassword';
 import SingleBlog from './pages/SingleBlog';
 import SingleProduct from './pages/SingleProduct';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import PrivacyPolicy from './PrivacyPollicy';
 import RefundPloicy from './RefundPloicy';
 import ShippingPolicy from './ShippingPolicy';
 import TermAndContions from './TermAndContions';
+
 function App() {
   return (
     <BrowserRouter>
@@ -27,10 +30,12 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='store' element={<OurStore />} />
+          <Route path='product' element={<OurStore />} />
           <Route path='product/:id' element={<SingleProduct />} />
           <Route path='blogs' element={<Blogs />} />
           <Route path='blog/:id' element={<SingleBlog />} />
+          <Route path='cart' element={<Cart />} />
+          <Route path='checkout' element={<Checkout />} />
           <Route path='compare-product' element={<CompareProduct />} />
           <Route path='wishlist' element={<Wishlist />} />
           <Route path='login' element={<Login />} />
